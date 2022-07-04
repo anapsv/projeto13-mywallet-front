@@ -33,7 +33,7 @@ export default function SignUp() {
         };
 
         console.log(signupInfo);
-        const request = axios.post('http://localhost:5000/signup', signupInfo);
+        const request = axios.post('https://back-mywallet-anapsv.herokuapp.com/signup', signupInfo);
 
         request.then(response => {
             setEmail("");

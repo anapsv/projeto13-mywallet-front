@@ -23,7 +23,7 @@ export default function Login() {
             password
         };
 
-        const request = axios.post('http://localhost:5000/login', loginInfo);
+        const request = axios.post('https://back-mywallet-anapsv.herokuapp.com/login', loginInfo);
 
         request.then(response => {
             setEmail("");

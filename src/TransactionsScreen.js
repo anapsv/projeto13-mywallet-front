@@ -26,7 +26,7 @@ export default function TransactionsScreen() {
             }
         };
 
-        const promise = axios.get('http://localhost:5000/transactions', config);
+        const promise = axios.get('https://back-mywallet-anapsv.herokuapp.com/transactions', config);
 
         promise.then(resposta => {
             setTransactions(resposta.data);

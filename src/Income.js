@@ -36,7 +36,7 @@ export default function Income() {
             date: now.format("DD/MM/YY")
         }
 
-        const promise = axios.post('http://localhost:5000/transactions', postTransaction, config);
+        const promise = axios.post('https://back-mywallet-anapsv.herokuapp.com/transactions', postTransaction, config);
 
         promise.then(response => {
             setValue("");
